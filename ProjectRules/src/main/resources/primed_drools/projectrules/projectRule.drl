@@ -14,10 +14,10 @@ end
 rule "Match RelationShip"
 	when
      f2 : Project($projectRelationShipList : projectRelationShipList)
-     ProjectRelationShip(relationShip == 'ss') from $projectRelationShipList
+     f3 : ProjectRelationShip(relationShip == 'ss') from $projectRelationShipList
      
 	then
 		System.out.println("RelationShip Match : ");
-		f2.setrelationShipId(100);
+		f3.setrelationShipId(100);
 	
 end
