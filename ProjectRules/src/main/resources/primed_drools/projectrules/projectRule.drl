@@ -8,3 +8,12 @@ rule "Match Name"
 	then
 		  System.out.println("Rule Match : ");
 end
+
+rule "Match RelationShip"
+	when
+		f1 : Project( projectRelationShipList contains "ss" )
+	then
+		modify( f1 ) {
+				setPriority( "High" )
+		}
+end
