@@ -14,7 +14,7 @@ end
 rule "Match RelationShip"
 	when
      f2 : Project($pr : ProjectRelationShip)
-     f3 : pr(relationship == "ss")
+     f3 : ProjectRelationShip(relationship == "ss")
      
 	then
 			//	System.out.println("RelationShip Match : " +value);
