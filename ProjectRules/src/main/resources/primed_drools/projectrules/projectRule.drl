@@ -13,8 +13,7 @@ end
 
 rule "Match RelationShip"
 	when
-		$f2 : Project(projectRelationShipList)
-		 forall( projectRelationShipList( $f2, relationship = 'ss' ) )
+		 forall( projectRelationShipList( Project.projectRelationShipList, relationship = 'ss' ) )
 	then
 				System.out.println("RelationShip Match : ");
 	
