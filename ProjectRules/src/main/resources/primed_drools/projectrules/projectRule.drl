@@ -13,7 +13,7 @@ end
 
 rule "Match RelationShip"
 	when
-		 forall( projectRelationShipList( Project.projectRelationShipList, relationship == 'ss' ) )
+		 forall( projectRelationShip( Project.projectRelationShip, relationship == 'ss' ) )
 	then
 				System.out.println("RelationShip Match : ");
 	
