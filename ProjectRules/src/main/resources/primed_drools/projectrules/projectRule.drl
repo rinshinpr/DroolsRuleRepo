@@ -13,7 +13,9 @@ end
 
 rule "Match RelationShip"
 	when
-		$f2 : Project( projectRelationShipList contains "ss" )
+		$f2 : Project(projectRelationShipList)
+		
+		 forall( Bus( this == $f2, relationship = 'ss' ) )
 	then
 				System.out.println("RelationShip Match : ");
 	
