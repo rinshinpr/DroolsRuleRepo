@@ -18,6 +18,6 @@ rule "Match RelationShip"
      
 	then
 		System.out.println("RelationShip Match : ");
-		f3.setrelationShipId(100);
+		f3.setRelationShipId(100);
 	
 end
