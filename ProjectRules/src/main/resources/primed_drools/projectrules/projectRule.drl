@@ -14,9 +14,9 @@ end
 rule "Match RelationShip"
 	when
      projectRelationShip : projectRelationShip($listOfString : Project.projectRelationShip)  
-     value : String() from $listOfString.relationship
+     //value : String() from $listOfString.relationship
      
 	then
-				System.out.println("RelationShip Match : " +value);
+			//	System.out.println("RelationShip Match : " +value);
 	
 end
