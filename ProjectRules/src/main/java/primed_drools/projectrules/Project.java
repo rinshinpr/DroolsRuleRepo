@@ -9,18 +9,21 @@ public class Project implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Project Id")
+   @org.kie.api.definition.type.Label("Project Id")
    private java.lang.Integer id;
-   @org.kie.api.definition.type.Label(value = "Project Name")
+   @org.kie.api.definition.type.Label("Project Name")
    private java.lang.String name;
-   @org.kie.api.definition.type.Label(value = "Project Start Date")
+   @org.kie.api.definition.type.Label("Project Start Date")
    private java.util.Date startDate;
-   @org.kie.api.definition.type.Label(value = "Project End Date")
+   @org.kie.api.definition.type.Label("Project End Date")
    private java.util.Date endDate;
-   @org.kie.api.definition.type.Label(value = "Duration")
+   @org.kie.api.definition.type.Label("Duration")
    private java.lang.Long duration;
-   @org.kie.api.definition.type.Label(value = "Priority")
+   @org.kie.api.definition.type.Label("Priority")
    private java.lang.String priority;
+
+   @org.kie.api.definition.type.Label(value = "RelationShip Details")
+   private java.util.List<primed_drools.projectrules.ProjectRelationShip> projectRelationShipList;
 
    public Project()
    {
@@ -86,9 +89,25 @@ public class Project implements java.io.Serializable
       this.priority = priority;
    }
 
-   public Project(java.lang.Integer id, java.lang.String name,
-         java.util.Date startDate, java.util.Date endDate,
-         java.lang.Long duration, java.lang.String priority)
+   public java.util.List<primed_drools.projectrules.ProjectRelationShip> getProjectRelationShipList()
+   {
+      return this.projectRelationShipList;
+   }
+
+   public void setProjectRelationShipList(
+         java.util.List<primed_drools.projectrules.ProjectRelationShip> projectRelationShipList)
+   {
+      this.projectRelationShipList = projectRelationShipList;
+   }
+
+   public Project(
+         java.lang.Integer id,
+         java.lang.String name,
+         java.util.Date startDate,
+         java.util.Date endDate,
+         java.lang.Long duration,
+         java.lang.String priority,
+         java.util.List<primed_drools.projectrules.ProjectRelationShip> projectRelationShipList)
    {
       this.id = id;
       this.name = name;
@@ -96,6 +115,7 @@ public class Project implements java.io.Serializable
       this.endDate = endDate;
       this.duration = duration;
       this.priority = priority;
+      this.projectRelationShipList = projectRelationShipList;
    }
 
 }
