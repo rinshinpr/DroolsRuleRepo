@@ -11,9 +11,9 @@ end
 
 rule "Match RelationShip"
 	when
-		f2 : Project( projectRelationShipList contains "ss" )
+		$f2 : Project( projectRelationShipList contains "ss" )
 	then
-		modify( f2 ) {
+		modify( $f2 ) {
 				//setPriority( "High" )
 				System.out.println("RelationShip Match : ");
 		}
