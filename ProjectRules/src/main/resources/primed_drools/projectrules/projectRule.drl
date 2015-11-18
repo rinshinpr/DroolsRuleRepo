@@ -13,7 +13,7 @@ end
 
 rule "Match RelationShip"
 	when
-     f2 : Project.ProjectRelationShip;
+     f2 : Project.ProjectRelationShip
      //value : String() from $listOfString.relationship
      
 	then
