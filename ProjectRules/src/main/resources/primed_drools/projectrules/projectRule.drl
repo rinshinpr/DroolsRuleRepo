@@ -13,7 +13,7 @@ end
 
 rule "Match RelationShip"
 	when
-     f2 : Project(pr : ProjectRelationShip)
+     f2 : Project.ProjectRelationShip
      f3 : ProjectRelationShip(f2.relationShip == 'ss')
      
 	then
