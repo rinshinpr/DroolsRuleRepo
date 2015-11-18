@@ -33,6 +33,7 @@
         </org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryConditionCol52>
       </conditions>
       <window>
+        <operator></operator>
         <parameters/>
       </window>
     </Pattern52>
