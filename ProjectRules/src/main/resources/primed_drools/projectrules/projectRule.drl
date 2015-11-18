@@ -1,2 +1,10 @@
 package primed_drools.projectrules;
 
+import primed_drools.projectrules.Project;
+
+rule "Match Name"
+	when
+		$f1 : Project( name == "Jyoti" )
+	then
+		  System.out.println("Rule Match");
+end
