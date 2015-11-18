@@ -13,8 +13,8 @@ end
 
 rule "Match RelationShip"
 	when
-     f2 : Project.ProjectRelationShip
-     ProjectRelationShip(f2.relationShip == 'ss')
+     f2 : Project($projectRelationShipList : projectRelationShipList)
+     ProjectRelationShip(relationShip == 'ss') from $projectRelationShipList
      
 	then
 			//	System.out.println("RelationShip Match : " +value);
