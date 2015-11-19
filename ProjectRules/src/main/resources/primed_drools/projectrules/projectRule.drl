@@ -4,21 +4,8 @@ import primed_drools.projectrules.Project;
 import primed_drools.projectrules.ProjectRelationShip;
 rule "Match Name"
 	when
-	    PrimedFact($project : project)
-		//f1 : PrimedFact.project( id == 29 )
+	    eval(true)
 	then
 		  System.out.println("Rule Match : ");
-		//  f1.setPriority("High");
 		  
-end
-
-rule "Match RelationShip"
-	when
-     f2 : Project($projectRelationShipList : projectRelationShipList)
-     f3 : ProjectRelationShip(relationShip == 'ss') from $projectRelationShipList
-     
-	then
-		System.out.println("RelationShip Match : ");
-		f3.setRelationShipId(100);
-	
 end
