@@ -5,7 +5,7 @@ import primed_drools.projectrules.ProjectRelationShip;
 rule "Match Name"
 	when
 	    PrimedFact($project : project)
-		f1 : project( id == 29 )
+		f1 : Project( id == 29 ) from project
 	then
 		  System.out.println("Rule Match : ");
 		  f1.setPriority("High");
