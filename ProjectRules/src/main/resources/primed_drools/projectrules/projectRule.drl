@@ -4,8 +4,8 @@ import primed_drools.projectrules.Project;
 import primed_drools.projectrules.ProjectRelationShip;
 
 when
-	    PrimedFact($project : project)
-		f1 : Project( id == 29 ) from project
+	    PrimedFact($project : Project)
+		f1 : Project( id == 29 ) from Project
 	then
 		System.out.println("Rule Match : ");
 		f1.setPriority("High");
