@@ -5,7 +5,7 @@ import primed_drools.projectrules.ProjectRelationShip;
 
 rule "Match Name"
 when
-	$varB : PrimedFact(project.id.equals("hello")) 
+	$varB : PrimedFact(project.id.equals("29")) 
 	then
 		System.out.println("Rule Match : ");
 		//proj.setPriority("High");
