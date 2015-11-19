@@ -9,4 +9,5 @@ when
 	then
 		System.out.println("Rule Match : ");
 		$varB.getProject().setPriority("High");
+		$varB.getDomainScore().setScore("100");
 end
