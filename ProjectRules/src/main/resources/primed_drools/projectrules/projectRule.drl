@@ -8,6 +8,6 @@ when
 		PrimedFact(proj.id == 29, $proj : project) 
 	then
 		System.out.println("Rule Match : ");
-		proj.setPriority("High");
+		//proj.setPriority("High");
 		  
 end
