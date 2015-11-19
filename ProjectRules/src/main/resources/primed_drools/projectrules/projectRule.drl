@@ -3,6 +3,7 @@ import primed_drools.projectrules.PrimedFact;
 import primed_drools.projectrules.Project;
 import primed_drools.projectrules.ProjectRelationShip;
 
+rule "Match Name"
 when
 	    PrimedFact($project : Project)
 		f1 : Project( id == 29 ) from Project
