@@ -9,6 +9,6 @@ when
 	then
 		System.out.println("Rule Match : " + $varB.getProject().getId());
 		$varB.getProject().setPriority("High");
-		$varB.getDomainScore().setsetProjectId(100);
+		$varB.getDomainScore().setProjectId(100);
         $varB.getDomainScore().setScore("100");
 end
