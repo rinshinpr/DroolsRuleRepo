@@ -1,6 +1,4 @@
 package primed_drools.projectrules;
-
-primed_drools.projectrules.Project( )package primed_drools.projectrules;
 import primed_drools.projectrules.PrimedFact;
 import primed_drools.projectrules.Project;
 import primed_drools.projectrules.ProjectRelationShip;
@@ -15,4 +13,3 @@ when
 		$varB.getDomainScore().setProjectId($varB.getProject().getId());
         $varB.getDomainScore().setScore("100");
 end
-
