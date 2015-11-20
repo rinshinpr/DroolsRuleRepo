@@ -6,10 +6,22 @@ import primed_drools.projectrules.Project;
 import primed_drools.projectrules.ProjectRelationShip;
 
 rule "Match Name"
+ruleflow-group 'group1'
 when
 	$varB : PrimedFact(project.id == 29) 
 	then
 		System.out.println("Rule Match : " + $varB.getProject().getId());
+		$varB.getProject().setPriority("High");
+		$varB.getDomainScore().setProjectId($varB.getProject().getId());
+        $varB.getDomainScore().setScore("100");
+end
+
+rule "Condition 2"
+ruleflow-group 'group2'
+when
+	$varB : PrimedFact(project.id == 32) 
+	then
+		System.out.println("Condition 2 Rule Match : " + $varB.getProject().getId());
 		$varB.getProject().setPriority("High");
 		$varB.getDomainScore().setProjectId($varB.getProject().getId());
         $varB.getDomainScore().setScore("100");
