@@ -16,13 +16,3 @@ when
         $varB.getDomainScore().setScore("100");
 end
 
-rule "Condition 2"
-ruleflow-group 'group2'
-when
-	$varB : PrimedFact(project.id == 32) 
-	then
-		System.out.println("Condition 2 Rule Match : " + $varB.getProject().getId());
-		$varB.getProject().setPriority("High");
-		$varB.getDomainScore().setProjectId($varB.getProject().getId());
-        $varB.getDomainScore().setScore("100");
-end
