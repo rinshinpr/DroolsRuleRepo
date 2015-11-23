@@ -1,2 +1,8 @@
 package primed_drools.scorecalulator;
 
+rule "Match Name"
+when
+	eval(true)
+	then
+		System.out.println("Default Rule Matches.");
+end
