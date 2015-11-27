@@ -15,6 +15,7 @@ when
 end
 
 rule "Not Match"
+ruleflow-group 'group1'
 when
 	eval(true)
 	then
