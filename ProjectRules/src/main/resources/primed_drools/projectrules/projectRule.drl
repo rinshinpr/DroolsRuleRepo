@@ -4,7 +4,6 @@ import primed_drools.projectrules.Project;
 import primed_drools.projectrules.ProjectRelationShip;
 
 rule "Match Name"
-ruleflow-group 'group1'
 when
 	$varB : PrimedFact(project.id == 29) 
 	then
