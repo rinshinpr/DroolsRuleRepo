@@ -12,3 +12,11 @@ when
 		$varB.getDomainScore().setProjectId($varB.getProject().getId());
         $varB.getDomainScore().setScore("100");
 end
+
+rule "Not Match"
+when
+	eval(true)
+	then
+		System.out.println("Not Rule Match : ");
+	
+end
